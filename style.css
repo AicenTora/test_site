@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background: #FFDAB9;
+    animation: down 1s;
+
+}
+
+.content {
+    padding: 0 2% 2% 2%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#background-header {
+    /* border: 1px solid black; */
+    border-radius: 0 0 30px 30px;
+    background: white;
+}
+
+#img-padding {
+    padding-top: 5%;
+}
+
+div {
+    padding: 0.3%;
+}
+
+.card {
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-evenly;
+}
+
+#no-margin {
+    margin-left: 0%;
+    padding-top: 30px;
+}
+
+.card p {
+    margin-left: 2%;
+    padding: 2%;
+    border-radius: 30px;
+    background: #F5F5DC;
+    width: 50%;
+    text-align:center;
+}
+
+
+
+.socials {
+    padding: 2%;
+    display: flex;
+    justify-content:space-evenly;
+    border-radius: 30px;
+    background: white;
+}
+
+#hobby-padding {
+    border-radius: 30px 30px 0 0;
+    background: rgb(255, 183, 156);
+}
+
+ol {
+    display: flex;
+}
+
+/* #ol-padding {
+    padding-left: 0;
+} */
+
+li {
+    flex: 1;
+}
+
+#background-exp {
+    background: #ffa888;
+}
+
+.table-header, .row {
+    padding: 3%;
+    background: white;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+#round-header {
+    background: coral;
+    /* border-radius: 30px 30px 0 0; */
+}
+
+.col {
+    text-align: center;
+    flex: 1;
+}
+
+#first-color {
+    background: rgb(180, 180, 180);
+}
+
+#second-color {
+    background: rgb(210, 210, 210);
+}
+
+#third-color {
+    background: rgb(240, 240, 240);
+}
+#round-footer {
+    border-radius: 0 0 30px 30px;
+}
+
+#form-flex {
+    display: flex;
+    padding-bottom: 2%;
+}
+
+form div {
+    padding-top: 1%;
+}
+
+#label-padding {
+    padding-left: 2.5%;
+}
+
+input, textarea {
+    padding: 3%;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+@keyframes down {
+    from {
+        transform: translateY(-1000px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
