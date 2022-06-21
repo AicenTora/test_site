@@ -11,25 +11,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="background-header">
-            <img src="images/TrollDespair.png" class="avatar">
-            <h1 class="name">Владислав Белоусов</h1>
-        </div>
-
-
-        <div class="card">
-            <p id="no-margin">Я заинтересован в освоении <strong>Web-разработки.</strong></p>
-
-            <p>Я люблю <em>готовить, игры,</em> а также хочу сделать <strong><em>программирование</em></strong> ещё одним своим любимым занятием.</p>
-        </div>
-
-        <div class="socials">
-
-            <h3 class="bottom-line" id="social-margin"><strong>Список социальных сетей:</strong></h3>
-            <div class="links">
-                <a href="#" target="_blank" class="link">Telegram</a> |
-                <a href="#" target="_blank" class="link">Instagram</a> |
-                <a href="#" target="_blank" class="link">VK</a>
+        <div class="header">
+            <img src="images/okok.jpg" class="avatar">
+            <div class="info">
+                <h1 id="name-size" class="name">Владислав Белоусов</h1>
+                <div class="about">
+                    <p>Я заинтересован в освоении <strong>Web-разработки.</strong></p>
+                    <p>Я люблю <em>готовить, игры,</em> а также хочу сделать <strong><em>программирование</em></strong> ещё одним своим любимым занятием.</p>
+                </div>
+            
+                <div>
+                    <h3 id="social-size"><strong>Список социальных сетей:</strong></h3>
+                    <div class="links">
+                        <a href="#" target="_blank" class="link">Telegram</a> |
+                        <a href="#" target="_blank" class="link">Instagram</a> |
+                        <a href="#" target="_blank" class="link">VK</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="hobby">
@@ -50,7 +48,7 @@
                 <h2>Опыт работы</h2>
             </div>
             <section>
-                <div class="table-header" id="round-header">
+                <div class="row">
                     <div class="col">Название</div>
                     <div class="col">Должность</div>
                     <div class="col">Год</div>
@@ -65,7 +63,7 @@
                     <div class="col">Ничто</div>
                     <div class="col">2018-2020</div>
                 </div>
-                <div class="row" id="round-footer">
+                <div class="row">
                     <div class="col">Безработный по жизни</div>|
                     <div class="col">И звать меня никем</div>|
                     <div class="col">2020-сейчас</div>
@@ -75,9 +73,8 @@
 
         <div class="contact-me">
             <h2>Связаться со мной</h2>
-
             <form>
-                <div class="form-flex">
+                <div class="form-row">
                     <div class="label-flex">
                         <label for="name">Ваше имя:</label><br>
                         <input type="text" id="name" placeholder="Введите имя">
@@ -88,15 +85,13 @@
                         <input type="email" id="email" placeholder="Введите email">
                     </div>
                 </div>
-                <div>
-                    <label for="message">Ваше сообщение:</label>
-                    <br>
-                    <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение...">
-
-                    </textarea>
-                </div>
+                    <div class="textarea-align">
+                        <label for="message">Ваше сообщение:</label>
+                        <br>
+                        <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+                    </div>
                 <br>
-                <input type="submit" value="Отправить!">
+                <input class="btn" type="submit" value="Отправить!">
             </form>
         </div>
     </div>

@@ -17,7 +17,7 @@ body {
 
 .container {
     padding: 0 2% 2% 2%;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
     text-align: center;
     /* box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.8); */
@@ -39,13 +39,15 @@ a:active {
     transform: scale(0.9);
 }
 
-.background-header {
+.header {
     /* border: 1px solid black; */
     border-radius: 0 0 30px 30px;
     background: rgb(255, 255, 255, 0.6);
     padding: 20px 0px;
+    max-width: 100%;
     margin-bottom: 10px;
     transition: all 0.2s;
+    display: flex;
 }
 
 .background-header:hover {
@@ -53,94 +55,109 @@ a:active {
 }
 
 .avatar {
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
     border-radius: 30px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); */
     /* padding-top: 5%; */
     transition: all 0.25s;
 }
 
 .avatar:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .avatar:active {
-    transform: scale(1.1);
+    transform: scale(1.02);
+}
+
+.info {
+    text-align: left;
+    padding: 10px 0 0 30px;
+    width: 50%;
 }
 
 .name {
-    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about {
+    padding-bottom: 10px;
 }
 
 /* div {
     padding: 0.3%;
 } */
 
-.card {
+/* .card {
     display: flex;
     border-radius: 30px;
     justify-content: space-evenly;
     
-}
+} */
 
-
-
-#no-margin {
+/* #no-margin {
     margin-left: 0%;
     padding-top: 40px;
-}
+} */
 
-.card p {
-    margin-left: 2%;
+/* .card p {
+    margin-left: 10px;
     padding: 20px;
     border-radius: 30px;
     background: rgba(255, 200, 168, 0.7);
     width: 50%;
     text-align:center;
     transition: all 0.2s;
-}
+    margin-bottom: 10px;
+} */
 
-.card p:hover {
+/* .card p:hover {
     transform:scale(1.05);
 }
 
 .card p:active {
     transform:scale(0.9);
 }
+*/
 
-.socials {
-    margin-top: 10px;
+/* .socials {
     padding: 2%;
     border-radius: 30px;
     background: rgb(255, 255, 255, 0.7);
     transition: all 0.2s;
-}
+    margin-bottom: 10px;
+} */
 
-.socials:hover {
+ /* .socials:hover {
     transform: scale(1.05);
-}
+} */
 
 .bottom-line {
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
-
+/*
 #social-margin {
     margin-bottom: 5px;
-}
+}  */
 
-.links {
+/* .links {
     max-width: 100%;
-    display: flex;
-}
+    display: inline;
+} */
 
 .link {
-    width: 25%;
-    flex: 1;
+    transition: all 0.2s;
+    display: inline-block;
+}
 
+.link:hover {
+    transform: scale(1.1);
 }
 
 .hobby {
-    margin-top: 10px;
     padding-top: 10px;
     border-radius: 30px;
     background: rgb(255, 183, 156, 0.7);
@@ -159,6 +176,7 @@ a:active {
     padding: 10px 0px;
     max-width: 100%;
     display: flex;
+    list-style: none;
 }
 
 li {
@@ -199,12 +217,13 @@ li:hover {
 }
 
 .row:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
-#round-header {
+.row:first-child {
     background: rgb(255, 127, 80, 0.7);
-    /* border-radius: 30px 30px 0 0; */
+    transition: none;
+    transform: none;
 }
 
 .col {
@@ -213,53 +232,90 @@ li:hover {
 }
 
 
-#round-footer {
+.row:last-child {
     border-radius: 0 0 30px 30px;
     border: 0px;
+    margin-bottom: 10px;
 }
 
 .contact-me {
     background: rgb(0, 0, 0, 0.5);
     border-radius: 60px;
-    margin-top: 20px;
     padding: 20px 0;
-    box-shadow: 24px 24px 14px rgba(0, 0, 0, 0.35);
     color: white;
     transition: all 0.2s;
-}
-
-.contact-me:hover {
-    transform: scale(1.05);
-}
-
-.form-flex {
-    padding: 20PX 0;
-    display: flex;
+    display: block;
     max-width: 100%;
 }
 
-.label-flex {
-    flex: 1;
-    width: 25%;
+.contact-me:hover {
+    transform: scale(1.01);
+}
+
+.contact-me h2 {
+    margin-bottom: 10px;
+}
+/* 
+.form-flex {
+    /* padding: 20px 0; */
+    /* display: flex; 
+    max-width: 100%;
+} */
+
+.form-row {
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .label-flex {
+    margin-right: 20px;
+    text-align:left;
+    width: 50%;
+}
+
+.form-row .label-flex:last-child {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.label-flex input, .textarea-align textarea {
+    
+    width: 100%;
     box-sizing: border-box;
+    margin-bottom: 10px;
+    background: transparent;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    color: white;
+    
+    padding: 20px 20px 20px 0;
+    outline: none;
+    font-family: inherit;
 }
 
 
 
 input, textarea {
-    margin-top: 10px;
-    padding: 3%;
-    border: 1px solid white;
-    border-radius: 30px;
+    border: none;
     transition: all 0.2s;
+} 
+
+.textarea-align textarea {
+    padding: 20px;
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 60px;
 }
 
 input:hover, textarea:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 input:active, textarea:active {
-    transform: scale(1.15);
+    transform: scale(0.95);
 }
 @keyframes down {
     from {
@@ -268,5 +324,82 @@ input:active, textarea:active {
     
     to {
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 500px;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    .avatar {
+        margin-top: 35px;
+        height: 100px;
+        width: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+
+    .avatar {
+        margin-top: 30px;
+    }
+
+    #name-size {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        display: block;
+    }
+
+    .info {
+        padding: 20px 0 0 0;
+        width: 100%;
+        /* text-align: center; */
+    }
+    .about {
+        text-align: center;
+        padding: 0 20px 10px 20px;
+    }
+
+    #name-size {
+        text-align: center;
+    }
+
+    .avatar {
+        margin-top: 0;
+    }
+
+    #social-size {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .links {
+        display: flex;
+    }
+    .link {
+        flex: 1;
+        text-align: center;
     }
 }
